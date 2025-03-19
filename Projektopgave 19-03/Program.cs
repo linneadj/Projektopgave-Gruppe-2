@@ -1,12 +1,13 @@
 ﻿namespace Projektopgave_19_03
 {
-    internal class GreenKids
+    class Program
     {
         static void Main(string[] args)
         {
             ToejStykke Troeje = new(1, "Troeje", "Large", "Adidas", "Bomuld", false, ToejTilstand.God, DateTime.Now, 90);
             ToejStykke Hoodie = new ToejStykke(45, "Hoodie", "L", "Nike", "Polyester", false, ToejTilstand.Middel, DateTime.Now, 45);
 
+            Console.WriteLine("Test");
         }
 
         public static void Tilfoej(ToejStykke Tøj)

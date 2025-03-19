@@ -10,14 +10,12 @@
             Console.WriteLine("Test");
         }
 
+        public static List<ToejStykke> toejStykker = [];
+
         public static void Tilfoej(ToejStykke Tøj)
         {
             toejStykker.Add(Tøj);
         }
-
-        public static List<ToejStykke> toejStykker = [];
-
-        public static string[] toejTyper = { "Jakke", "Hoodie", "T-Shirt", "Bukser", "Sko", "Diverse" };
     }
 
     public class ToejStykke
@@ -43,20 +41,21 @@
             ToejTilstand Stand = stand;
             Indleveringsdato = indleveringsDato;
             Miljoegevinst = miljoeGevinst;
-
         }
 
-        public static Dictionary<string, double> MiljøGevinst = new()
+        public static Dictionary<string, double> MaterialeMiljøGevinst = new()
         {
-            {"Bomuld", 51.99   },
+            {"Bomuld", 51.99 },
             {"Polyester",100.99 },
             {"Viskose", 43.22 },
             { "Hør", 14.99},
             {"Uld", 9.32 },
             {"Nylon", 17.47 },
-            {"Silke", 2.33},
+            {"Silke", 2.33 },
             {"Elasthan", 53.77 }
         };
+
+        public static string[] toejTyper = { "Jakke", "Hoodie", "T-Shirt", "Bukser", "Sko", "Diverse" };
     }
 
     public enum ToejTilstand
